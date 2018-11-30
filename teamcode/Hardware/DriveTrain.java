@@ -38,10 +38,6 @@ public class   DriveTrain extends BaseHardware{
 
     public DcMotor leftDrive, rightDrive;
 
-    public void init(HardwareMap hardwareMap, Telemetry telemetry){
-        this.initialize(hardwareMap, telemetry);
-    }
-
     private void initialize(HardwareMap hardwareMap, Telemetry telemetry){
         leftDrive = hardwareMap.dcMotor.get("left_drive");
         rightDrive = hardwareMap.dcMotor.get("right_drive");
