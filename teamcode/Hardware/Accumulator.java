@@ -43,10 +43,6 @@ public class Accumulator extends BaseHardware{
 
     accDrivePosition acc = accDrivePosition.RETRACTED;
 
-    public void init(HardwareMap hardwareMap, Telemetry telemetry){
-        this.initialize(hardwareMap, telemetry);
-    }
-
     private void initialize(HardwareMap hardwareMap, Telemetry telemetry){
         accDrive = (DcMotorEx)hardwareMap.dcMotor.get("accDrive");
 
