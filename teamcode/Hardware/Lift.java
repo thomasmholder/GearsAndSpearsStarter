@@ -40,10 +40,6 @@ public class Lift extends BaseHardware {
 
     public Servo hangLatch, liftLatch, dumpBucket;
 
-    public void init(HardwareMap hardwareMap, Telemetry telemetry){
-        this.initialize(hardwareMap, telemetry);
-    }
-
     private void initialize(HardwareMap hardwareMap, Telemetry telemetry){
         liftDrive = (DcMotorEx)hardwareMap.dcMotor.get("lift_drive");
 
