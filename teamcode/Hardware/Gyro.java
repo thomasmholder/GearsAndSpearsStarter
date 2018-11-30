@@ -31,10 +31,6 @@ public class Gyro extends BaseHardware{
 
     public Gyro(){}
 
-    public void init(HardwareMap hardwareMap, Telemetry telemetry){
-        this.initialize(hardwareMap, telemetry);
-    }
-
     private void initialize(HardwareMap hardwareMap, Telemetry telemetry){
 
         BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
